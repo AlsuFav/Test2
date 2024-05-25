@@ -8,13 +8,8 @@ public class CheckEvenTest {
 
     @Test
     public void testCheckEven() {
-        // Тест на пустой массив
         assertEquals(0, checkEven(new byte[0]));
-
-        // Тест на массив с нечетным количеством четных байтов
         assertEquals(1, checkEven(new byte[]{1, 2, 3, 4}));
-
-        // Тест на массив с смешанным количеством четных и нечетных байтов
         assertEquals(1, checkEven(new byte[]{1, 2, 3, 4, 5, 6}));
     }
 
